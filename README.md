@@ -1,6 +1,6 @@
 # 🛡️ Nmap Advanced Stealth & Verbose Automator
 
-This repository hosts a professional Python-based automation script designed for the **Network Enumeration** and **Information Gathering** phase of a penetration test. The tool streamlines complex `nmap` commands, focusing on firewall bypass techniques and stealth scanning.
+This repository hosts a professional Python-based automation script designed for the **Network Scanning** and **Information Gathering** phase of a penetration test. The tool streamlines complex `nmap` commands, focusing on firewall bypass techniques and stealth scanning.
 
 ## 📖 Project Description & Disclaimer
 **Description:** The `nmap_stealth.py` script is a menu-driven automation tool that allows security researchers to execute various advanced scanning techniques—from TCP SYN and XMAS scans to highly anonymous Idle/Zombie scans. It automates evasion flags such as packet fragmentation, MTU manipulation, and decoy addresses to simulate real-world attack scenarios and test network resilience.
