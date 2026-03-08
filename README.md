@@ -22,3 +22,4 @@ This repository hosts a professional Python-based automation script designed for
    ```bash
    sudo python3 nmap_stealth.py
 Enter the Target IP and select your desired evasion technique from the menu.
+<img width="1651" height="902" alt="image" src="https://github.com/user-attachments/assets/46cc62f2-646b-4906-ad64-96185884fc67" />
