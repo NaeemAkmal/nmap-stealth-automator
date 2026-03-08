@@ -1,21 +1,31 @@
-# 🛡️ Automated Hping3 Stealth Enumeration Script
+🛡️ Nmap Advanced Stealth & Verbose Automator
+This repository hosts a professional Python-based automation script designed for the Network Enumeration and Information Gathering phase of a penetration test. The tool streamlines complex nmap commands, focusing on firewall bypass techniques and stealth scanning.
 
-A powerful Python-based automation tool designed for **Network Enumeration** and **Firewall Evasion**. This script automates complex `hping3` commands to identify open ports and services while remaining stealthy using fragmentation and decoy techniques.
+📖 Project Description & Disclaimer
+Description: The nmap_stealth.py script is a menu-driven automation tool that allows security researchers to execute various advanced scanning techniques—from TCP SYN and XMAS scans to highly anonymous Idle/Zombie scans. It automates evasion flags such as packet fragmentation, MTU manipulation, and decoy addresses to simulate real-world attack scenarios and test network resilience.
 
-## 🚀 Features
-- **TCP SYN Scan:** Systematic probing of ports 1-1024.
-- **XMAS Tree Scan:** Stealthy scanning using FIN, PSH, and URG flags.
-- **Firewall Evasion:** - IP Address Decoy (Single & 10x Random Spoofing).
-  - Packet Fragmentation (Standard & Custom MTU 16).
-  - Source Port Manipulation (Using DNS Port 53).
-- **Idle Zombie Scan:** Advanced scanning using a silent host to hide the attacker's identity.
+⚠️ LEGAL DISCLAIMER: This tool is intended strictly for Educational Purposes and authorized Ethical Hacking assessments. Unauthorized scanning or accessing networks without explicit written permission is illegal. The developer (Naeem Akmal) is not responsible for any misuse or damage caused by this tool. Use it only in controlled lab environments or on systems you are legally authorized to test.
 
-## 🛠️ Prerequisites
-- **OS:** Kali Linux / Parrot OS
-- **Tools:** `hping3`, `python3`
-- **Privileges:** Sudo/Root access required for raw packet crafting.
+🚀 Key Technical Features
+TCP SYN Stealth Scanning: High-speed discovery using half-open connections to minimize detection.
 
-## 📋 How to Use
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/YourUsername/hping3-enumeration-script.git](https://github.com/YourUsername/hping3-enumeration-script.git)
+Service Version Detection: Real-time identification of running services (e.g., FTP, SSH, HTTP) with verbose output.
+
+Firewall & IDS Evasion:
+
+XMAS Tree Scans to probe stateless firewalls.
+
+Packet Fragmentation & MTU 16 to bypass Deep Packet Inspection (DPI).
+
+Decoy Scanning to mask the real origin of the scan among multiple IPs.
+
+Total Anonymity (Idle Scan): Advanced probing via a silent "Zombie" host for complete source IP protection.
+
+💻 Usage Instructions
+Ensure Nmap and Python 3 are installed on your Linux environment.
+
+Run the script with root privileges (required for raw packet crafting):
+
+Bash
+sudo python3 nmap_stealth.py
+Enter the Target IP and select your desired evasion technique from the menu.
